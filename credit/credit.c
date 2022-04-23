@@ -1,4 +1,4 @@
-#include <cs50.h>
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -79,4 +79,20 @@ bool is_valid(long input)
         j -= 2;
     }
     return (((sums + products) % 10) == 0);
+}
+//still not ready
+long get_long(char *input)
+{
+    do
+    {
+        scanf("insert a long number: %lld", input);
+        long output = (long)input;
+        if ((long)output != NULL)
+        {
+            break;
+            return output;
+        }
+    } while (true);
+    
+    
 }
